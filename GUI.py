@@ -7,8 +7,13 @@ import LTE_stat_Plot
 import file_manip
 import glob
 import atexit
+import os
 
-
+pathread = open('path.txt')
+pathlist = pathread.readlines()
+pathread.close()
+path = pathlist[1][:-1]
+wpath = pathlist[2]
 
 
 #on Program exit delete contents of working directory
@@ -51,7 +56,8 @@ def main():
         #the XML and pull the required counters.  Function also returns list of moids which we use
         #For the graph's legend
         fileList = []
-        for file in glob.glob('C:\\Users\cjones84\PycharmProjects\LTE_Ran_statistics\\tempWorkingDirectory\\*'):
+        for file in glob.glob(os.path.join(wpath, '*')):
+        #for file in glob.glob('C:\\Users\cjones84\PycharmProjects\LTE_Ran_statistics\\tempWorkingDirectory\\*'):
             fileList.append(file)
         moidList = LTE_stat_XMLparse.parseStat(fileList, stat)
 
