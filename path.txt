@@ -1,0 +1,3 @@
+#Please enter your full path to where stats are kept. Preserve the path structure from SAM! On the third line enter path to a temporary working directory.  DO NOT ADD empty 4th line!!
+C:\Users\cjones84\Documents\RawData
+C:\Users\cjones84\Documents\temp\tempWorkingDirectory
