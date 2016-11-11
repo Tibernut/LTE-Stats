@@ -17,7 +17,7 @@ def drawGraph(moidList, counter):
     #rel_path = "tempWorkingDirectory"
     #abs_file_path = os.path.join(script_dir, rel_path)
     #fullfilen = abs_file_path + '/counter.csv', 'r'
-    filename = 'C:/Users/cjones84/PycharmProjects/LTE_Ran_statistics/counter2.csv'
+    filename = 'counter2.csv'
     def getColumn(filename, column):
         f = open(filename, 'r')
         results = csv.reader(f, delimiter=",")
