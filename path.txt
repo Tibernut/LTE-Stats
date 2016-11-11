@@ -1,3 +1,3 @@
 #Please enter your full path to where stats are kept. Preserve the path structure from SAM! On third line put full path to your working directory!
-C:\Users\cjones84\Documents\RawData
-C:\Users\cjones84\PycharmProjects\LTE_Ran_statistics\tempWorkingDirectory
+Replace line with full path to raw data directory
+Replace line with full path to temporary working directory here 
